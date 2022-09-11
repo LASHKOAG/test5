@@ -1,20 +1,19 @@
-int pin = 8;
-int time_2 = 1000;
-
-void BlinkSimple(){
-    digitalWrite(pin, HIGH); 
-    delay(time_2); 
-    digitalWrite(pin, LOW); 
-    delay(time_2);
+int led = 8;
+int _delay = 1000;
+void BlinkTest(){
+  
 }
 
 void setup() {
-  pinMode(pin, OUTPUT);
+  pinMode(led, OUTPUT);
 }
 
-// the loop function runs over and over again forever
+
 void loop() {
-    BlinkSimple();
+    digitalWrite(led, HIGH); 
+    delay(_delay); 
+    digitalWrite(led, LOW); 
+    delay(_delay);
 
     while(1){}
 }

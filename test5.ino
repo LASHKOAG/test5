@@ -1,14 +1,16 @@
+int pin = 8;
+int time_2 = 1000;
 
 void setup() {
-  pinMode(8, OUTPUT);
+  pinMode(pin, OUTPUT);
 }
 
 // the loop function runs over and over again forever
 void loop() {
-  digitalWrite(8, HIGH);   // turn the LED on (HIGH is the voltage level)
-  delay(1000);                       // wait for a second                     // wait for a second
+  digitalWrite(pin, HIGH);   // turn the LED on (HIGH is the voltage level)
+  delay(time_2);                       // wait for a second                     // wait for a second
 
- digitalWrite(8, LOW);   // turn the LED on (HIGH is the voltage level)
-  delay(1000);                       // wait for a second
+ digitalWrite(pin, LOW);   // turn the LED on (HIGH is the voltage level)
+  delay(time_2);                       // wait for a second
 
 }

@@ -1,16 +1,20 @@
 int pin = 8;
 int time_2 = 1000;
 
+void BlinkSimple(){
+    digitalWrite(pin, HIGH); 
+    delay(time_2); 
+    digitalWrite(pin, LOW); 
+    delay(time_2);
+}
+
 void setup() {
   pinMode(pin, OUTPUT);
 }
 
 // the loop function runs over and over again forever
 void loop() {
-  digitalWrite(pin, HIGH);   // turn the LED on (HIGH is the voltage level)
-  delay(time_2);                       // wait for a second                     // wait for a second
+    BlinkSimple();
 
- digitalWrite(pin, LOW);   // turn the LED on (HIGH is the voltage level)
-  delay(time_2);                       // wait for a second
-
+    while(1){}
 }
